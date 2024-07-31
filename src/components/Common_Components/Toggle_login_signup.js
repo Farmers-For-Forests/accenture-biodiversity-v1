@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Toggle_login_signup = ({ notify, redirect_To, redirect_path }) => {
-  console.log(redirect_path);
+  
 
   return (
     <div>
