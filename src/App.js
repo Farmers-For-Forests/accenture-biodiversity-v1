@@ -8,6 +8,7 @@ import MandalaGardenPage from './pages/MandalaGardens/MandalaGardensPage';
 import WesternGhatsPage from './pages/WesternGhats/WesternGhatsPage';
 import WetlandPage from './pages/WetLands/WetLandsPage';
 import CfSummary from './pages/CentralForests/cf-summary';
+import DarSummary from './pages/DryAridRegion/dar-summary';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} /> 
+        <Route path="/dry-arid-region/dar-summary" element={<DarSummary />} /> 
         <Route path="/dry-arid-region" element={<DryAridRegionPage />} />
         <Route path="/grasslands" element={<GrasslandsPage />} />
         <Route path="/mandala-garden" element={<MandalaGardenPage />} />

@@ -1,18 +1,14 @@
-// ForestDetail.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CloseButton from '../../components/CloseButton';
-import '../../styles/cf-summary.css'
+import '../../styles/cf-summary.css';
 
 const CfSummary = () => {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="container">
       <div className="header">
-        <button className="close-button" onClick={() => history.goBack()}>
-          &times;
-        </button>
         <CloseButton />
         <h1 className="header-title">Central Forest</h1>
       </div>
@@ -30,7 +26,7 @@ const CfSummary = () => {
           These forests are home to a variety of plant species including teak, bamboo, sal, mahua, tendu, and many medicinal plants. 
           The Melghat Tiger Reserve and Tadoba Andhari Tiger.
         </p>
-        <button className="detail-button">Detailed Information</button>
+        <button className="detail-button" >Detailed Information</button>
       </div>
     </div>
   );

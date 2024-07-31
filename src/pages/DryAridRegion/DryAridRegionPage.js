@@ -19,7 +19,7 @@ function DryAridRegionPage() {
         The dry and arid ecosystem of Maharashtra is a crucial part of the state’s ecological, 
         economical, and social landscapes. Stretching across regions like Marathwada, Vidarbha, ...
         </p>
-        <Link to="/dar-summary.js" className="summary-link">Summary</Link>
+        <Link to="/dry-arid-region/dar-summary" className="summary-link">Summary</Link>
         <img src="dar-2.png" alt="Map" className="map-image" />
         <Link to="/DI-DAR.js" className="map-link">Map</Link>
       </div>
