@@ -1,0 +1,39 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+  }
+  
+  .overview-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  .map-image {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+  }
+  
+  .summary-link,
+  .map-link {
+    display: block;
+    margin: 8px 0;
+    color: #f0ad4e;
+    text-decoration: none;
+  }
+  
