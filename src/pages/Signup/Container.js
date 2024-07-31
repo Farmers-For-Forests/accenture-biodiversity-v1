@@ -4,7 +4,7 @@ import Form from './Form'
 
 const Container = () => {
     return (
-      <div className='w-[319px] max-h-[429px] pt-[111px]'>
+      <div className='w-[319px] absolute bg-green-200 max-h-[429px] top-[111px]'>
           <Signup_Login_Header heading="Sign up" paragraph="Just a few quick things to get started"/>
           <Form/>
       </div>
