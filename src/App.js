@@ -9,12 +9,14 @@ import WesternGhatsPage from './pages/WesternGhats/WesternGhatsPage';
 import WetlandPage from './pages/WetLands/WetLandsPage';
 import CfSummary from './pages/CentralForests/cf-summary';
 import DarSummary from './pages/DryAridRegion/dar-summary';
+import Signup from './pages/Signup/Signup';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} /> 
         <Route path="/dry-arid-region/dar-summary" element={<DarSummary />} /> 
