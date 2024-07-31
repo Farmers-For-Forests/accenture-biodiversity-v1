@@ -6,8 +6,8 @@ import Toggle_login_signup from '../../components/Common_Components/Toggle_login
 const Form = () => {
     const [focusedInput, setFocusedInput] = useState(null);
     return (
-      <div className="w-[290px] max-h-[350px] mx-auto bg-yellow-200 flex flex-col gap-[18px]  ">
-        <section className=" w-full max-h-[278px]">
+      <div className="w-[290px]  mx-auto flex flex-col gap-[18px]  ">
+        <section className=" w-full">
           <form className="flex flex-col gap-[18px] ">
             <div
               className={`w-[290px] h-[56px] ${
@@ -76,6 +76,7 @@ const Form = () => {
             </div>
   
           <CTA btn_name="Create account"/>
+          <CTA btn_name="Continue with google"/>
           </form>
         </section>
   
