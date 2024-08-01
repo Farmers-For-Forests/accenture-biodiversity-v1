@@ -20,7 +20,7 @@ const GrasslandsPage = () => {
         of biodiversity and serves as a vital component of the state’s ecological, 
         economic and social fabric, Span...
         </p>
-        <a href="gl-summary.js" className="summary-link">Summary</a>
+        <a href="/grasslands/gl-summary" className="summary-link">Summary</a>
         <img src="/gl-2.png" alt="Map" className="map-image" />
         <a href="/DI-GL.js" className="map-link">Map</a>
       </div>

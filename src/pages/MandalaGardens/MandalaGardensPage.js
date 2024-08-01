@@ -20,7 +20,7 @@ const MandalaGardenPage = () => {
         derives its name 2from the Sanskrit word “mandala”, meaning “circle”. 
         Linda Woodrow introduced this geometric ga...
         </p>
-        <a href="/mg-summary.js" className="summary-link">Summary</a>
+        <a href="/mandala-garden/mg-summary" className="summary-link">Summary</a>
         <img src="/mg-2.png" alt="Map" className="map-image" />
         <a href="/DI-MG.js" className="map-link">Map</a>
       </div>

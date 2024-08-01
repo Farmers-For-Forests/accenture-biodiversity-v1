@@ -20,7 +20,7 @@ const WetLandsPage = () => {
         including rivers, lakes, marshes, mangroves, and estuaries. 
         These wetlands cover approximately 2,727 square ki...
         </p>
-        <a href="/wl-summary.js" className="summary-link">Summary</a>
+        <a href="/wetland/wl-summary" className="summary-link">Summary</a>
         <img src="/wl-2.png" alt="Map" className="map-image" />
         <a href="/DI-WL.js" className="map-link">Map</a>
       </div>
