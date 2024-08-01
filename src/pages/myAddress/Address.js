@@ -4,9 +4,16 @@ import Address_Container from "./Address_Container";
 
 const Address = () => {
   return (
-    <div className="relative w-[360px] h-[100vh] bg-green-100">
+    <div className="relative w-[360px] min-h-screen  mx-auto">
       <Address_Container />
-      {/* <Footer/> */}
+      
+
+       
+      
+     
+       
+       
+      
     </div>
   );
 };
