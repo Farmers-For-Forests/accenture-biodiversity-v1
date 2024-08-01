@@ -11,6 +11,7 @@ import CfSummary from './pages/CentralForests/cf-summary';
 import DarSummary from './pages/DryAridRegion/dar-summary';
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Login/Login';
+import Address from '../src/pages/myAddress/Address'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/address" element={<Address />} />
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} /> 
         <Route path="/dry-arid-region/dar-summary" element={<DarSummary />} /> 
