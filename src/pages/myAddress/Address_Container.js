@@ -4,7 +4,7 @@ const Address_Container = () => {
   const [focusedInput, setFocusedInput] = useState(null);
 
   return (
-    <main className="absolute top-[114px] left-[23px] flex flex-col gap-[18px] w-[322px] min-h-[474px]">
+    <main className=" pt-[114px] mx-auto flex flex-col gap-[18px] w-[322px] min-h-[474px]">
       <p className="font-[600] text-[#125B57] text-[24px] leading-[26.4px]">
         Add a new address
       </p>

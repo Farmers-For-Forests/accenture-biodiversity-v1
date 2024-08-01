@@ -4,16 +4,12 @@ import Address_Container from "./Address_Container";
 
 const Address = () => {
   return (
-    <div className="relative w-[360px] min-h-screen  mx-auto">
+    <div className=" w-[360px] min-h-screen  mx-auto">
       <Address_Container />
-      
+      <div className="mt-10">
+      <Footer/>
+      </div>
 
-       
-      
-     
-       
-       
-      
     </div>
   );
 };
