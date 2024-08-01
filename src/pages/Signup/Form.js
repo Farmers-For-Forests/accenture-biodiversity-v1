@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import CTA from '../../components/Common_Components/CTA';
 import Toggle_login_signup from '../../components/Common_Components/Toggle_login_signup';
+import Google_singup_CTA from '../../components/Google_singup_CTA';
 
 
 const Form = () => {
@@ -76,7 +77,7 @@ const Form = () => {
             </div>
   
           <CTA btn_name="Create account"/>
-          <CTA btn_name="Continue with google"/>
+          <Google_singup_CTA />
           </form>
         </section>
   
