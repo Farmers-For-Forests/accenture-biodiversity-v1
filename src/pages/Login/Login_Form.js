@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CTA from '../../components/Common_Components/CTA';
 import Toggle_login_signup from '../../components/Common_Components/Toggle_login_signup';
+import Google_singup_CTA from '../../components/Google_singup_CTA';
 
 const Login_Form = () => {
     const [focusedInput, setFocusedInput] = useState(null);
@@ -57,6 +58,7 @@ const Login_Form = () => {
             </div>
   
           <CTA btn_name="Log in"/>
+          <Google_singup_CTA btn_name="Login with Google"/>
           
           </form>
         </section>

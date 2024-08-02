@@ -1,4 +1,4 @@
-/* Custom style for the Google OAuth button */
+/* Custom style for the Google OAuth button
 
 .custom-google-button .nsm7Bb-HzV7m-LgbsSe.hJDwNd-SxQuSe.i5vt6e-Ia7Qfc.uaxL4e-RbRzK {
     border: none !important; 
@@ -6,6 +6,7 @@
     border-radius: 40px !important;
     width: 290px !important;
     height: 56px !important;
+    
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
   }
   
@@ -23,5 +24,7 @@
     font-family: 'Inter', sans-serif !important; 
     text-align: center;
     color: white !important;
-    content: "Continue with Google" !important; /* Change the text (may not work if restricted) */
+    content: "Continue with Google" !important;
   }
+
+  */
