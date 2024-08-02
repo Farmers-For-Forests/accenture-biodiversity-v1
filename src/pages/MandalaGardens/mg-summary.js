@@ -6,6 +6,10 @@ import '../../styles/mg-summary.css';
 const MgSummary = () => {
   const navigate = useNavigate();
 
+  const handleButtonClick = () => {
+    navigate('/mg-summary/DI-MG'); 
+  };
+
   return (
     <div className="container">
       <div className="header">
@@ -24,7 +28,7 @@ const MgSummary = () => {
         These forests are home to a variety of plant species including teak, bamboo, sal, mahua, tendu, and many medicinal plants. 
         The Melghat Tiger Reserve and Tadoba Andhari Tiger.
         </p>
-        <button className="detail-button" >Detailed Information</button>
+        <button className="detail-button" onClick={handleButtonClick}>Detailed Information</button>
       </div>
     </div>
   );

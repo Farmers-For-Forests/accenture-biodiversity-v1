@@ -6,6 +6,10 @@ import '../../styles/gl-summary.css';
 const GlSummary = () => {
   const navigate = useNavigate();
 
+  const handleButtonClick = () => {
+    navigate('/gl-summary/DI-GL'); 
+  };
+
   return (
     <div className="container">
       <div className="header">
@@ -26,7 +30,7 @@ const GlSummary = () => {
             These forests are home to a variety of plant species including teak, bamboo, sal, mahua, tendu, and many medicinal plants. 
             The Melghat Tiger Reserve and Tadoba Andhari Tiger..
         </p>
-        <button className="detail-button" >Detailed Information</button>
+        <button className="detail-button" onClick={handleButtonClick} >Detailed Information</button>
       </div>
     </div>
   );

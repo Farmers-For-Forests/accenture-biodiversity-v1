@@ -6,6 +6,10 @@ import '../../styles/wg-summary.css';
 const WgSummary = () => {
   const navigate = useNavigate();
 
+  const handleButtonClick = () => {
+    navigate('/wg-summary/DI-WG');
+  };
+  
   return (
     <div className="container">
       <div className="header">
@@ -42,7 +46,7 @@ const WgSummary = () => {
          preservation remains a challenge. Initiatives like the Western Ghats Ecology Expert Panel (WGEEP) aim to develop sustainable 
          development policies to protect this vital region.
         </p>
-        <button className="detail-button" >Detailed Information</button>
+        <button className="detail-button" onClick={handleButtonClick} >Detailed Information</button>
       </div>
     </div>
   );

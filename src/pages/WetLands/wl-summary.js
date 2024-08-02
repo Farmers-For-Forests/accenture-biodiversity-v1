@@ -6,6 +6,10 @@ import '../../styles/wl-summary.css';
 const WlSummary = () => {
   const navigate = useNavigate();
 
+  const handleButtonClick = () => {
+    navigate('/wl-summary/DI-WL'); 
+  };  
+
   return (
     <div className="container">
       <div className="header">
@@ -42,7 +46,7 @@ const WlSummary = () => {
         As of 2023, the state has initiated several wetland conservation projects, aiming to protect over 1 ,500 square kilometers of wetlands, 
         highlighting the government's commitment to preserving these crucial natural resources.
         </p>
-        <button className="detail-button" >Detailed Information</button>
+        <button className="detail-button" onClick={handleButtonClick}>Detailed Information</button>
       </div>
     </div>
   );

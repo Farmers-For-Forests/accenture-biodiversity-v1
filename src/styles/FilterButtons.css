@@ -1,0 +1,32 @@
+.filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.filter-buttons button {
+  padding: 10px 20px; /* Added horizontal padding for a better button shape */
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  color: #333; /* Added text color for better readability */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Added transition for text color */
+  font-size: 16px; /* Adjusted font size for better readability */
+  font-weight: bold; /* Made text bold for emphasis */
+}
+
+.filter-buttons button:hover {
+  background-color: #ddd; /* Light gray on hover for better feedback */
+}
+
+.filter-buttons button.active {
+  background-color: #e74c3c; /* Red background for active state */
+  color: white; /* White text color for active state */
+}
+
+.filter-buttons button:disabled {
+  background-color: #ccc; /* Gray background for disabled state */
+  color: #666; /* Darker gray text color for disabled state */
+  cursor: not-allowed; /* Indicates that the button is not interactive */
+}

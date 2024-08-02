@@ -19,7 +19,7 @@ const WesternGhats = () => {
         The Western Ghats of Maharashtra, part of a larger mountain range spanning six states, 
         are a UNESCO World Heritage Site and a biodiversity hotspot. This range, stretching ov...
         </p>
-        <a href="/western-ghats/ws-summary" className="summary-link">Summary</a>
+        <a href="/western-ghats/wg-summary" className="summary-link">Summary</a>
         <img src="/wg-2.png" alt="Map" className="map-image" />
         <a href="/DI-WG.js" className="map-link">Map</a>
       </div>

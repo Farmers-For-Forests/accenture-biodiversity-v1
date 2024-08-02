@@ -5,6 +5,10 @@ import '../../styles/dar-summary.css';
 
 const DarSummary = () => {
   const navigate = useNavigate();
+  
+  const handleButtonClick = () => {
+    navigate('/dar-summary/DI-DAR'); 
+  };
 
   return (
     <div className="container">
@@ -33,7 +37,7 @@ const DarSummary = () => {
         However, the ecosystem l s fragility also exposes these communities to vulnerabilities such as water scarcity, 
         food insecurity, and economic fluctuations, necessitating sustainable development strategies and support systems.
         </p>
-        <button className="detail-button" >Detailed Information</button>
+        <button className="detail-button"onClick={handleButtonClick} >Detailed Information</button>
       </div>
     </div>
   );

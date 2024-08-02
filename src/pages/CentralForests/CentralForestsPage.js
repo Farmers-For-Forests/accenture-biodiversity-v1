@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import CloseButton from '../../components/CloseButton';
 import '../../styles/CentralForestsPage.css';
-import CfSummary from './cf-summary';
+
 
 const CentralForestPage = () => {
   return (
