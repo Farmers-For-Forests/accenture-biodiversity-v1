@@ -1,33 +1,41 @@
-import React, { useEffect } from "react";
-import { GoogleLogin } from "@react-oauth/google";
-import "../styles/GoogleOAuth_button.css";
+import React from "react";
 
-const Google_singup_CTA = () => {
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const buttonText = document.querySelector(".nsm7Bb-HzV7m-LgbsSe-BPrWId");
-      if (buttonText && buttonText.innerText !== "Continue with Google") {
-        buttonText.innerText = "Continue with Google";
-        clearInterval(interval);
+import { useGoogleLogin } from "@react-oauth/google";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
+const Google_singup_CTA = ({btn_name}) => {
+  const navigate = useNavigate()
+  const googleLogin = useGoogleLogin({
+    onSuccess: async (tokenResponse) => {
+      console.log("Token Response:", tokenResponse);
+
+      try {
+        const userInfo = await axios.get(
+          "https://www.googleapis.com/oauth2/v3/userinfo",
+          { headers: { Authorization: `Bearer ${tokenResponse.access_token}` } }
+        );
+
+        console.log("User Info:", userInfo);
+        
+        navigate("/")
+      } catch (error) {
+        console.error("Error fetching user info:", error);
       }
-    }, 100); // Check every 100ms
+    },
+    onError: (errorResponse) => {
+      console.error("Login Error:", errorResponse);
+    },
+  });
 
-    // Clean up interval on component unmount
-    return () => clearInterval(interval);
-  }, []);
-  const onLoginSuccess = () => {};
-
-  const onLoginError = () => {};
   return (
-    <>
-      <div className="custom-google-button pb-[8px]">
-        <GoogleLogin
-          onSuccess={onLoginSuccess}
-          onError={onLoginError}
-          
-        />
-      </div>
-    </>
+    <button
+      onClick={() => googleLogin()}
+      className="font-inter w-[290px] h-[56px] bg-[#125B57] text-white font-[700] text-[16px] leading-[19.36px] text-center rounded-[40px]"
+      style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
+    >
+      {btn_name}
+    </button>
   );
 };
 

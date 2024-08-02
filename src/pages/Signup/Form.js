@@ -77,7 +77,7 @@ const Form = () => {
             </div>
   
           <CTA btn_name="Create account"/>
-          <Google_singup_CTA />
+          <Google_singup_CTA btn_name="Continue with Google"/>
           </form>
         </section>
   
