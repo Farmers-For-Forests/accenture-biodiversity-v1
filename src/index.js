@@ -5,7 +5,8 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import reportWebVitals from './reportWebVitals';
-import {clientID} from './Sensitive_Data'
+import { clientID } from './Sensitive_Data';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
