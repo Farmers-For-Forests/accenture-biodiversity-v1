@@ -30,7 +30,7 @@ const QRComponent = () => {
 
   return (
     <div className="main_Container">
-      <h1>Final QR</h1>
+      
       <QRCodeScanner onScan={handleScan} isScanning={isScanning} />
 
       {showPopup && (
