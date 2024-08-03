@@ -6,14 +6,14 @@ import QRCodeComponent from "../../components/QRCodeComponent";
 
 const Login_Form = () => {
   const [focusedInput, setFocusedInput] = useState(null);
-  const [showQR, setShowQR] = useState(false);
-  const [name,setName] = useState(true)
+  // const [showQR, setShowQR] = useState(false);
+  // const [name,setName] = useState(true)
 
- const show = () =>{
-  console.log("hello world")
-  setName(!name)
-  console.log(name);
- }
+//  const show = () =>{
+
+//   setName(!name)
+
+//  }
 
   return (
     <div className="w-[290px] mx-auto flex flex-col gap-[18px]">
@@ -56,10 +56,10 @@ const Login_Form = () => {
           </div>
 
           <CTA btn_name="Log in" />
-          <button onClick={show}>{!name ? "scan" : "close"}</button>
-          {
+          {/* <button onClick={show}>{!name ? "scan" : "close"}</button> */}
+          {/* {
                 name ? <QRCodeComponent />: ""
-              }
+              } */}
           <Google_singup_CTA btn_name="Login with Google" />
         </form>
       </section>
