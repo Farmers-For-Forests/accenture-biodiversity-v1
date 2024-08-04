@@ -19,6 +19,7 @@ import DIGrassLands from './pages/Grasslands/DI-GL';
 import DIMandalaGardens from './pages/MandalaGardens/DI-MG';
 import DIWesternGhats from './pages/WesternGhats/DI-WG';
 import DIWetLands from './pages/WetLands/DI-WL';
+import ItemDetail from './components/ItemsDetail'; 
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/wetland" element={<WetlandPage />} />
         <Route path="/wetland/wl-summary" element={<WlSummary />} />
         <Route path="wl-summary/DI-WL" element={<DIWetLands />} />
+        <Route path="/item/:id" element={<ItemDetail />} /> {/* New route for item details */}
       </Routes>
     </Router>
   );
