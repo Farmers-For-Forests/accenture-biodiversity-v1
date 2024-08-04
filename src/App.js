@@ -20,12 +20,20 @@ import DIMandalaGardens from './pages/MandalaGardens/DI-MG';
 import DIWesternGhats from './pages/WesternGhats/DI-WG';
 import DIWetLands from './pages/WetLands/DI-WL';
 import ItemDetail from './components/ItemsDetail'; 
+import Signup from './pages/Signup/Signup';
+import Login from './pages/Login/Login';
+import Address from '../src/pages/myAddress/Address'
+import QR from './components/QR.js';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/qrcode" element={<QR />} />
+        <Route path="/address" element={<Address />} />
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} />
         <Route path="/cf-summary/DI-CF" element={<DICentralForests />} /> 
