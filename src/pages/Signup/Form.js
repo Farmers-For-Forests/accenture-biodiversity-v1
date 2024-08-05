@@ -70,8 +70,7 @@ const Form = () => {
                     ? "border-2 border-black"
                     : "border-none"
                 } bg-white`}
-                we
-                are
+              
                 style={{ boxSizing: "border-box" }}
               />
             </div>
