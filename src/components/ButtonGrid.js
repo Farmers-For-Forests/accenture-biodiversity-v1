@@ -16,12 +16,12 @@ const ButtonGrid = () => {
   const navigate = useNavigate();
 
   const buttons = [
-    { label: 'Central Forest', color: '#f44336', path: '/central-forest' },
-    { label: 'Dry and Arid Region', color: '#ff9800', path: '/dry-arid-region' },
-    { label: 'Grasslands', color: '#4caf50', path: '/grasslands' },
-    { label: 'Mandala Garden', color: '#00bcd4', path: '/mandala-garden' },
-    { label: 'Western Ghats', color: '#795548', path: '/western-ghats' },
-    { label: 'Wetland', color: '#2196f3', path: '/wetland' },
+    { label: 'Central Forest', color: '#E05555', path: '/central-forest' },
+    { label: 'Dry and Arid Region', color: '#F4910F', path: '/dry-arid-region' },
+    { label: 'Grasslands', color: '#86A34D', path: '/grasslands' },
+    { label: 'Mandala Garden', color: '#125B57', path: '/mandala-garden' },
+    { label: 'Western Ghats', color: '#BA744A', path: '/western-ghats' },
+    { label: 'Wetland', color: '#4293B8', path: '/wetland' },
   ];
 
   return (

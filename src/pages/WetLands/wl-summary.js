@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import CloseButton from '../../components/CloseButton';
+import Header from '../../components/Header';
 import '../../styles/wl-summary.css';
+import Footer from '../../components/Footer';
 
 const WlSummary = () => {
   const navigate = useNavigate();
@@ -12,10 +13,7 @@ const WlSummary = () => {
 
   return (
     <div className="container">
-      <div className="header">
-        <CloseButton />
-        <h1 className="header-title">Wet Land</h1>
-      </div>
+            <Header title="Wet Lands" style={{ color:"#4293B8" }}/>
       <div className="content">
         <h2 className="title">Summary of Flora, Fauna and land conditions</h2>
         <p className="description">
@@ -47,6 +45,7 @@ const WlSummary = () => {
         highlighting the government's commitment to preserving these crucial natural resources.
         </p>
         <button className="detail-button" onClick={handleButtonClick}>Detailed Information</button>
+      <Footer color="#4293B8"/>
       </div>
     </div>
   );

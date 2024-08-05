@@ -1,7 +1,12 @@
 .filter-buttons {
+  position: sticky; /* Make the buttons container sticky */
+  top: 0; /* Stick to the top of the viewport */
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
+  background-color: white; /* Optional: Add background color to ensure buttons are visible when sticky */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for a subtle elevation effect */
+  z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 .filter-buttons button {
@@ -18,6 +23,7 @@
 
 .filter-buttons button:hover {
   background-color: #ddd; /* Light gray on hover for better feedback */
+  color: #000; /* Optional: Change text color on hover if needed */
 }
 
 .filter-buttons button.active {

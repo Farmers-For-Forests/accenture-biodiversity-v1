@@ -1,0 +1,77 @@
+/* src/styles/DI-DAR.css */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .heading {
+    margin: 0;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  .item-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .item-info {
+    flex: 1;
+  }
+  
+  .item-category {
+    font-size: 0.8rem;
+    color: #999;
+    margin: 0;
+  }
+  
+  .item-name {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+  }
+  
+  .item-author {
+    font-size: 0.8rem;
+    color: #999;
+  }
+  
+  .footer {
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  

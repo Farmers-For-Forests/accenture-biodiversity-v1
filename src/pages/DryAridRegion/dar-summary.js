@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import CloseButton from '../../components/CloseButton';
 import '../../styles/dar-summary.css';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
 const DarSummary = () => {
   const navigate = useNavigate();
@@ -12,10 +13,7 @@ const DarSummary = () => {
 
   return (
     <div className="container">
-      <div className="header">
-        <CloseButton />
-        <h1 className="header-title">Dry and Arid Regions</h1>
-      </div>
+      <Header title="Dry Arid Regions" style={{ color:"#F4910F" }}/>
       <div className="content">
         <h2 className="title">Summary of Flora, Fauna and land conditions</h2>
         <p className="description">
@@ -37,7 +35,8 @@ const DarSummary = () => {
         However, the ecosystem l s fragility also exposes these communities to vulnerabilities such as water scarcity, 
         food insecurity, and economic fluctuations, necessitating sustainable development strategies and support systems.
         </p>
-        <button className="detail-button"onClick={handleButtonClick} >Detailed Information</button>
+        <button className="detail-button"onClick={handleButtonClick}>Detailed Information</button>
+      <Footer color='#F4910F'/>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import QRCodeScanner from './QRCodeScanner'; // Import the updated component
+import CloseButton from './CloseButton';
 
 const QRComponent = () => {
   const [scannedData, setScannedData] = useState('');
@@ -30,7 +31,7 @@ const QRComponent = () => {
 
   return (
     <div className="main_Container">
-      
+      <CloseButton />
       <QRCodeScanner onScan={handleScan} isScanning={isScanning} />
 
       {showPopup && (

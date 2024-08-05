@@ -1,11 +1,10 @@
 import React from "react";
-
 import { useGoogleLogin } from "@react-oauth/google";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Google_singup_CTA = ({btn_name}) => {
-  const navigate = useNavigate()
+const GoogleSignupCTA = ({ btn_name }) => {
+  const navigate = useNavigate();
   const googleLogin = useGoogleLogin({
     onSuccess: async (tokenResponse) => {
       console.log("Token Response:", tokenResponse);
@@ -17,8 +16,8 @@ const Google_singup_CTA = ({btn_name}) => {
         );
 
         console.log("User Info:", userInfo);
-        
-        navigate("/")
+
+        navigate("/");
       } catch (error) {
         console.error("Error fetching user info:", error);
       }
@@ -39,4 +38,4 @@ const Google_singup_CTA = ({btn_name}) => {
   );
 };
 
-export default Google_singup_CTA;
+export default GoogleSignupCTA;

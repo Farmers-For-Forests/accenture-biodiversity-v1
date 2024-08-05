@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import CloseButton from '../../components/CloseButton';
+import Header from '../../components/Header';
 import '../../styles/wg-summary.css';
+import Footer from '../../components/Footer';
 
 const WgSummary = () => {
   const navigate = useNavigate();
@@ -12,10 +13,7 @@ const WgSummary = () => {
   
   return (
     <div className="container">
-      <div className="header">
-        <CloseButton />
-        <h1 className="header-title">Western Ghats</h1>
-      </div>
+      <Header title="Western Ghats" style={{ color:"#BA744A" }}/>
       <div className="content">
         <h2 className="title">Summary of Flora, Fauna and land conditions</h2>
         <p className="description">
@@ -46,7 +44,8 @@ const WgSummary = () => {
          preservation remains a challenge. Initiatives like the Western Ghats Ecology Expert Panel (WGEEP) aim to develop sustainable 
          development policies to protect this vital region.
         </p>
-        <button className="detail-button" onClick={handleButtonClick} >Detailed Information</button>
+        <button className="detail-button" onClick={handleButtonClick}>Detailed Information</button>
+      <Footer color="#BA744A" />
       </div>
     </div>
   );

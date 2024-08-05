@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import CloseButton from '../../components/CloseButton';
+import Header from '../../components/Header';
 import '../../styles/mg-summary.css';
+import Footer from '../../components/Footer';
 
 const MgSummary = () => {
   const navigate = useNavigate();
@@ -12,10 +13,7 @@ const MgSummary = () => {
 
   return (
     <div className="container">
-      <div className="header">
-        <CloseButton />
-        <h1 className="header-title">Mandala Garden</h1>
-      </div>
+      <Header title="Mandala Gardens" style={{ color:"#125B57" }}/>
       <div className="content">
         <h2 className="title">Summary of Flora, Fauna and land conditions</h2>
         <p className="description">
@@ -29,6 +27,7 @@ const MgSummary = () => {
         The Melghat Tiger Reserve and Tadoba Andhari Tiger.
         </p>
         <button className="detail-button" onClick={handleButtonClick}>Detailed Information</button>
+      <Footer color="#125B57"/>
       </div>
     </div>
   );

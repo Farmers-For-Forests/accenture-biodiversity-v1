@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import CloseButton from '../../components/CloseButton';
+import Header from '../../components/Header';
 import '../../styles/cf-summary.css';
+import Footer from '../../components/Footer';
 
 const CfSummary = () => {
   const navigate = useNavigate();
@@ -12,10 +13,8 @@ const CfSummary = () => {
 
   return (
     <div className="container">
-      <div className="header">
-        <CloseButton />
-        <h1 className="header-title">Central Forest</h1>
-      </div>
+          <Header title="Central Forests" style={{ color:"#E05555" }}/>
+
       <div className="content">
         <h2 className="title">Summary of Flora, Fauna and land conditions</h2>
         <p className="description">
@@ -31,6 +30,8 @@ const CfSummary = () => {
           The Melghat Tiger Reserve and Tadoba Andhari Tiger.
         </p>
         <button className="detail-button" onClick={handleButtonClick}>Detailed Information</button>
+          
+          <Footer color="#E05555"/>
       </div>
     </div>
   );

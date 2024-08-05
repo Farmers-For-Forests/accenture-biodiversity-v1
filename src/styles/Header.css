@@ -1,14 +1,15 @@
-.homepage-header{
+.header {
     border-bottom-left-radius: 36px;
     border-bottom-right-radius: 36px;
-    height:120px;
-    color:"#E05555" 
-}
-.homepage-heading{
-    color:white;
-    font-size:20px;
+    height: 120px;
+  }
+  
+  .header-title {
+    color: white;
+    font-size: 20px;
     font-family: Inter;
-    font-weight:500;
+    font-weight: 500;
     word-wrap: break-word;
     padding: 35%;
-}
+  }
+  

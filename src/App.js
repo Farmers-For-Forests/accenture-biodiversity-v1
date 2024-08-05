@@ -22,18 +22,23 @@ import DIWetLands from './pages/WetLands/DI-WL';
 import ItemDetail from './components/ItemsDetail'; 
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Login/Login';
-import Address from '../src/pages/myAddress/Address'
+import Address from '../src/pages/myAddress/Address';
 import QR from './components/QR.js';
+import SettingsPage from './pages/Settings/settings.js';
+import Location from './pages/CustomerScience/Location.js';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Login />} /> {/* Set login page as default */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<HomePage />} /> 
         <Route path="/qrcode" element={<QR />} />
         <Route path="/address" element={<Address />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/location" element={<Location />} /> {/* Route for Page Under Construction */}
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} />
         <Route path="/cf-summary/DI-CF" element={<DICentralForests />} /> 
@@ -51,11 +56,24 @@ function App() {
         <Route path="/wg-summary/DI-WG" element={<DIWesternGhats />} />
         <Route path="/wetland" element={<WetlandPage />} />
         <Route path="/wetland/wl-summary" element={<WlSummary />} />
-        <Route path="wl-summary/DI-WL" element={<DIWetLands />} />
-        <Route path="/item/:id" element={<ItemDetail />} /> {/* New route for item details */}
+        <Route path="/wl-summary/DI-WL" element={<DIWetLands />} />
+        <Route path="/item/:id" element={<ItemDetail fetchItemDetails={fetchItemDetails} />} />
+        <Route path="/location" element={<Location />} /> {/* Route for location page */}
       </Routes>
     </Router>
   );
 }
 
+// Mock fetchItemDetails function
+const fetchItemDetails = async (id) => {
+  return {
+    id,
+    image: 'https://via.placeholder.com/150',
+    name: `Central Forest ${id}`,
+    audio: 'https://via.placeholder.com/150.mp3',
+    description: `Description for Central Forest ${id}.`
+  };
+};
+
 export default App;
+
