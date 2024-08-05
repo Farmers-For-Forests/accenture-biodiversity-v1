@@ -13,6 +13,8 @@ import Signup from './pages/Signup/Signup';
 import Login from './pages/Login/Login';
 import Address from '../src/pages/myAddress/Address'
 import QR from './components/QR.js';
+import Turn_Off from './pages/Notifications/Turn_Off.js';
+import Turn_On from './pages/Notifications/Turn_On.js';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/qrcode" element={<QR />} />
         <Route path="/address" element={<Address />} />
+        <Route path="/notificationOn" element={<Turn_Off />} />
+        <Route path="/notificationOff" element={<Turn_On />} />
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} /> 
         <Route path="/dry-arid-region/dar-summary" element={<DarSummary />} /> 
