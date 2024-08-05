@@ -20,7 +20,7 @@ code {
 
 @tailwind utilities;
 
-
+/*-------------------- This section is for QR scan -----------------------------  */
 .main_Container {
   width: 100%;
   height: 100vh;
@@ -53,4 +53,11 @@ code {
   color: white;
   position: relative;
 }
+
+
+/* ------------------------- This Section is for Language Component ------------------------------------*/
+.custom-border {
+  border-bottom: 1px solid var(--Global-Border-100, #F2F2F2);
+}
+
 
