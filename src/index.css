@@ -21,28 +21,28 @@ code {
 @tailwind utilities;
 
 /*-------------------- This section is for QR scan -----------------------------  */
-.main_Container {
+/* .main_Container {
   width: 100%;
   height: 100vh;
   background-color: white;
   position: relative;
 }
 
-/* Popup overlay styling */
+
 .popupOverlay {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 300px; /* Set height for the popup */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  height: 300px; 
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
-  align-items: flex-end; /* Align popup to bottom */
-  justify-content: center; /* Center horizontally */
-  z-index: 1000; /* Ensure it's above other content */
+  align-items: flex-end; 
+  justify-content: center; 
+  z-index: 1000; 
 }
 
-/* Popup content styling */
+
 .popupContent {
   width: 100%;
   max-width: 100%;
@@ -52,7 +52,72 @@ code {
   box-sizing: border-box;
   color: white;
   position: relative;
+} */
+
+
+
+/* Main container styling */
+.main_Container {
+  width: 100%;
+  height: 100vh;
+  margin-top: -36px;
+  /* background-color: blueviolet; */
+  position: relative;
+ 
 }
+
+.top_header{
+  z-index: 2000!important;
+}
+
+.qrContainer {
+  width: 100%;
+  height: 100vh; /* Make sure the container takes full viewport height */
+  display: flex;
+  justify-content: center;
+  /* width: 80%; */
+  align-items: flex-start;
+ 
+}
+
+.videoFullHeight {
+  width: 100%;
+ 
+  max-width: 100%;
+}
+
+/* Popup overlay styling */
+.popupOverlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 130px; /* Adjust height if needed */
+
+  display: flex;
+  align-items: flex-end; /* Align popup to bottom */
+  justify-content: center; /* Center horizontally */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Popup content styling */
+.popupContent {
+  width: 272px;
+  height: 75px;
+  background: #125B57;
+  border-radius: 12px;
+  border: 2px solid; /* Updated for border-top */
+  padding: 12px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: space-evenly; /* Center content horizontally */
+  gap: 0px;
+  position: absolute;
+  top: 0;
+}
+
 
 
 /* ------------------------- This Section is for Language Component ------------------------------------*/
