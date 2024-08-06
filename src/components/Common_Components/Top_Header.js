@@ -4,7 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 const Top_Header = ({ title }) => {
   return (
     <div
-      className="h-[106px] bg-[#125B57] flex justify-center items-center relative"
+      className="w-[full] h-[106px] bg-[#125B57] flex justify-center items-center relative"
       style={{
         borderTopLeftRadius: '0px',
         borderTopRightRadius: '0px',
