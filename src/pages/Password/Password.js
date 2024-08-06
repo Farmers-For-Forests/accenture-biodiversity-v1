@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Top_Header from "../../components/Common_Components/Top_Header";
+import CTA from "../../components/Common_Components/CTA";
 
 const Password = () => {
   const [focusedInput, setFocusedInput] = useState(null);
@@ -14,7 +15,7 @@ const Password = () => {
         <p className="font-inter font-[500] text-[20px] leading-[30px] tracking-[-2.3%] text-[#125B57]  ">
           Manage password
         </p>
-
+        {/*-------------- Input field to change Password ----------------- */}
         <div className="w-[327px] max-h-[72px] relative">
           <label
             htmlFor="Password"
@@ -55,6 +56,11 @@ const Password = () => {
             />
           </div>
         </div>
+
+        {/* button section for changing the Password */}
+        <section className="mt-[100px]">
+          <CTA btn_name="Change Password" />
+        </section>
       </section>
     </div>
   );
