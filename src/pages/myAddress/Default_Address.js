@@ -13,7 +13,7 @@ const Default_Address = () => {
     <div className="w-[480px] mx-auto">
       <Top_Header title="My Address" />
 
-      <section className=" w-[318px] h-[569px] mx-auto mt-[28px] flex flex-col gap-[300px]">
+      <section className=" w-[318px] h-[569px] mx-auto mt-[28px] flex flex-col gap-[328px]">
         <section className="w-[318px] h-[185px] flex flex-col gap-[18px] ">
           <p className="font-[600] text-[24px] leading-[26.4px] text-[#125B57]">
             Your Address
