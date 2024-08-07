@@ -19,6 +19,7 @@ import Language from './pages/Language_Page/Language.js';
 import Password from './pages/Password/Password.js'
 import Default_Address from './pages/myAddress/Default_Address.js';
 import Account from './pages/Account/Account.js';
+import Dashboard from './pages/HomePageDashboard/Dashboard.js';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/managePassword" element={<Password/>} />
         <Route path="/defaultAddress" element={<Default_Address/>} />
         <Route path="/account" element={<Account/>} />
+        <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} /> 
         <Route path="/dry-arid-region/dar-summary" element={<DarSummary />} /> 
