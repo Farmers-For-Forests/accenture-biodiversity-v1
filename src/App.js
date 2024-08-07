@@ -17,6 +17,7 @@ import Turn_Off from './pages/Notifications/Turn_Off.js';
 import Turn_On from './pages/Notifications/Turn_On.js';
 import Language from './pages/Language_Page/Language.js';
 import Password from './pages/Password/Password.js'
+import Default_Address from './pages/myAddress/Default_Address.js';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/notificationOff" element={<Turn_On />} />
         <Route path="/language" element={<Language />} />
         <Route path="/managePassword" element={<Password/>} />
+        <Route path="/defaultAddress" element={<Default_Address/>} />
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} /> 
         <Route path="/dry-arid-region/dar-summary" element={<DarSummary />} /> 
