@@ -19,7 +19,7 @@ const Default_Address = () => {
             Your Address
           </p>
           <p className="font-inter font-[500] text-[16px] leading-[16px] text-[#125B57]">
-            Default Address
+            Default Address<span className="text-red-500 pl-[2px]">*</span>
           </p>
 
           <div className={`w-[318px] border-2 border-[#125B57] p-[12px] `}>
