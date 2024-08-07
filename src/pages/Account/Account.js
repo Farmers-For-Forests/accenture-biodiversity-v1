@@ -9,7 +9,7 @@ const Account = () => {
         <Top_Header title='Account'/>
 
         <section className="w-[327px] max-h-[448px] mt-[28px] mx-auto flex flex-col gap-[18px]">
-        <div className=" max-h-[88px] bg-yellow-100 flex flex-col gap-[18px]">
+        <div className=" max-h-[88px]  flex flex-col gap-[18px]">
         <p className="font-[600] text-[24px] leading-[26.4px] text-[#125B57] ">
             User Profile    
         </p>
