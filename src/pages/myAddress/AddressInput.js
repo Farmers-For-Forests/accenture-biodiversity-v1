@@ -9,7 +9,7 @@ const AddressInput = ({html_for,input_type,placeholderValue}) => {
         htmlFor={html_for}
         className="font-medium text-[16px] leading-[16px] text-[#125B57]"
       >
-        {html_for} 
+        {placeholderValue ? "Pin code":html_for}
       </label>
 
       <input

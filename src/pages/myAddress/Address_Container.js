@@ -6,7 +6,7 @@ const Address_Container = () => {
   
 
   return (
-    <main className=" mt-[28px] mx-auto flex flex-col gap-[18px] w-full min-h-[474px]">
+    <main className=" mt-[28px] mx-auto flex flex-col gap-[18px] w-full pb-5">
       <p className="font-[600] text-[#125B57] text-[24px] leading-[26.4px]">
         Add a new address
       </p>

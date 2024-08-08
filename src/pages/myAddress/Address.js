@@ -6,7 +6,7 @@ import Top_Header from "../../components/Common_Components/Top_Header";
 
 const Address = () => {
   return (
-    <div className=" w-[100%] box-border">
+    <div className=" w-[100%]  box-border">
     <Top_Header title="My address" />
     <div className="box-border px-5">
     <Address_Container />
