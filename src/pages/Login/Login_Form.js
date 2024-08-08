@@ -6,21 +6,15 @@ import Google_singup_CTA from "../../components/Google_singup_CTA";
 
 const Login_Form = () => {
   const [focusedInput, setFocusedInput] = useState(null);
-  // const [showQR, setShowQR] = useState(false);
-  // const [name,setName] = useState(true)
 
-//  const show = () =>{
 
-//   setName(!name)
-
-//  }
 
   return (
-    <div className="w-[290px] mx-auto flex flex-col gap-[18px]">
+    <div className="w-full mx-auto flex flex-col gap-[18px]">
       <section className="w-full">
         <form className="flex flex-col gap-[18px]">
           <div
-            className={`w-[290px] h-[56px] ${
+            className={`w-full h-[56px] ${
               focusedInput === "username" ? "border-none" : "border-2 border-black"
             } bg-white`}
           >
@@ -38,7 +32,7 @@ const Login_Form = () => {
           </div>
 
           <div
-            className={`w-[290px] h-[56px] ${
+            className={`w-[full] h-[56px] ${
               focusedInput === "password" ? "border-none" : "border-2 border-black"
             } bg-white`}
           >
