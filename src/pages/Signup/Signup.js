@@ -3,8 +3,8 @@ import Container from './Container'
 
 const Signup = () => {
     return (
-      <main>
-          <section className="relative w-[319px]  h-[100vh] mx-auto">
+      <main className='px-5 box-border'>
+          <section className="relative w-[100%]   h-[100vh] ">
              <Container/>
           </section>
       </main>

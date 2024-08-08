@@ -7,11 +7,11 @@ import Google_singup_CTA from '../../components/Google_singup_CTA';
 const Form = () => {
     const [focusedInput, setFocusedInput] = useState(null);
     return (
-      <div className="w-[290px]  mx-auto flex flex-col gap-[18px]  ">
+      <div className="w-[100%]   mx-auto flex flex-col gap-[18px]  ">
         <section className=" w-full">
           <form className="flex flex-col gap-[18px] ">
             <div
-              className={`w-[290px] h-[56px] ${
+              className={`w-full h-[56px] ${
                 focusedInput === "email" ? "border-none" : "border-2 border-black"
               } bg-white`}
             >
@@ -31,7 +31,7 @@ const Form = () => {
             </div>
   
             <div
-              className={`w-[290px] h-[56px] ${
+              className={`w-full h-[56px] ${
                 focusedInput === "username"
                   ? "border-none"
                   : "border-2 border-black"
@@ -53,7 +53,7 @@ const Form = () => {
             </div>
   
             <div
-              className={`w-[290px] h-[56px] ${
+              className={`w-full h-[56px] ${
                 focusedInput === "password"
                   ? "border-none"
                   : "border-2 border-black"
