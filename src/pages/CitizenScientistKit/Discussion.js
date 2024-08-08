@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import Top_Header from '../../components/Common_Components/Top_Header'
 import CloseIcon from '@mui/icons-material/Close';
 
-import CTA from '../../components/Common_Components/CTA';
+
 import PostButton from './PostButton';
 import AddPhoto from './AddPhoto';
 
 const Discussion = () => {
     const [focusedInput, setFocusedInput] = useState(null);
   return (
-    <div className="w-[480px] mx-auto">
+    <div className="w-[100%] ">
         <Top_Header title="Citizen scientist kit"/>
         <section className="w-[330.2px] max-h-[586px] mt-[19px] flex flex-col gap-[205px] mx-auto">
             <section className="w-full max-h-[325px] flex flex-col gap-[45px]">
@@ -59,7 +59,10 @@ const Discussion = () => {
 
 
             {/* Post button */}
+            <section className="flex justify-center">
             <PostButton btn_name="POST"/>
+            </section>
+            
         </section>
     </div>
   )
