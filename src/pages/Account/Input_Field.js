@@ -6,7 +6,7 @@ const Input_Field = ({ html_for, input_type }) => {
   const [focusedInput, setFocusedInput] = useState(null);
 
   return (
-    <div className="w-[322px] max-h-[72px] relative">
+    <div className="w-full max-h-[72px] relative">
       <label
         htmlFor={html_for}
         className="font-medium text-[16px] leading-[16px] text-[#125B57]"

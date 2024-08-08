@@ -10,11 +10,11 @@ const Default_Address = () => {
   );
 
   return (
-    <div className="w-[100%] mx-auto">
+    <div className="w-[100%] box-border">
       <Top_Header title="My Address" />
 
-      <section className=" w-[318px] h-[569px] mx-auto mt-[28px] flex flex-col gap-[328px]">
-        <section className="w-[318px] h-[185px] flex flex-col gap-[18px] ">
+      <section className=" w-full box-border px-5 mt-[28px] flex flex-col gap-[108px]">
+        <section className="w-full  h-[185px] flex flex-col gap-[18px] ">
           <p className="font-[600] text-[24px] leading-[26.4px] text-[#125B57]">
             Your Address
           </p>
@@ -22,7 +22,7 @@ const Default_Address = () => {
             Default Address<span className="text-red-500 pl-[2px]">*</span>
           </p>
 
-          <div className={`w-[318px] border-2 border-[#125B57] p-[12px] `}>
+          <div className={`w-full  border-2 border-[#125B57] p-[12px] `}>
             <p className="text-[16px] leading-[16px] tracking-[-2%] font-[700] text-[#125B57] py-2">
               Nikhil raj
             </p>

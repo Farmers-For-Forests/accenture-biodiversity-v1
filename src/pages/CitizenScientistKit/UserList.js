@@ -5,12 +5,12 @@ const UserList = ({ name, message }) => {
   return (
     <>
       <div className="w-full h-[59.9px] flex mt-2 gap-[13px]">
-        <div className="w-[288px]  flex justify-start gap-[26px]">
+        <div className="w-full  flex justify-start gap-[26px]">
           <Avatar
             src="/broken-image.jpg"
             className="!w-[59.9px] !h-[59.9px] !bg-[#125B57] text-white"
           />
-          <div className="w-[228.1px] flex flex-col gap-[12px] ">
+          <div className="w-full flex flex-col gap-[12px] ">
             <p className="text-[12px] text-[#125B57] pt-2 font-inter font-[700] leading-[14.52px]">
               {name}
             </p>
@@ -25,8 +25,8 @@ const UserList = ({ name, message }) => {
         </div>
       </div>
 
-      <div className="w-[324px] flex justify-end">
-        <div className="w-[250px] border-[.5px] border-[#125B57] opacity-55"></div>
+      <div className="w-full flex justify-end">
+        <div className="w-[80%] border-[.5px] border-[#125B57] opacity-55"></div>
       </div>
     </>
   );

@@ -3,8 +3,8 @@ import Login_Container from './Login_Container'
 
 const Login = () => {
   return (
-    <main>
-    <section className="relative w-[319px] h-[100vh] mx-auto">
+    <main className='box-border px-5'>
+    <section className="relative w-[100%] h-[100vh] ">
        <Login_Container/>
     </section>
 </main>

@@ -9,12 +9,12 @@ import AddPhoto from './AddPhoto';
 const Discussion = () => {
     const [focusedInput, setFocusedInput] = useState(null);
   return (
-    <div className="w-[100%] ">
+    <div className="w-[100%] box-border ">
         <Top_Header title="Citizen scientist kit"/>
-        <section className="w-[330.2px] max-h-[586px] mt-[19px] flex flex-col gap-[205px] mx-auto">
+        <section className="w-full box-border px-5 max-h-[586px] mt-[19px] flex flex-col gap-[205px] mx-auto">
             <section className="w-full max-h-[325px] flex flex-col gap-[45px]">
-                <div className="w-full max-h-[22px] flex gap-[30px]">
-                    <div className="w-[236.2px] h-[22px] flex gap-[27px]">
+                <div className="w-full max-h-[22px] flex gap-[10px]">
+                    <div className="w-full h-[22px] flex gap-[10px]">
                         {/* icon */}
                         <CloseIcon/>
                         {/* text */}
@@ -26,7 +26,7 @@ const Discussion = () => {
                     </div>
                 </div>
 
-                <div className="w-[314px] max-h-[258px] mx-auto flex flex-col gap-[13px]">
+                <div className="w-full max-h-[258px] mx-auto flex flex-col gap-[13px]">
                     {/* inputs */}
                     <input
                         type="text"
@@ -59,7 +59,7 @@ const Discussion = () => {
 
 
             {/* Post button */}
-            <section className="flex justify-center">
+            <section className=" w-full box-border px-5   py-2">
             <PostButton btn_name="POST"/>
             </section>
             

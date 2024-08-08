@@ -12,9 +12,9 @@ import LastList from './LastList';
 
 const Dashboard = () => {
   return (
-    <div className='w-[100%]'>
+    <div className='w-[100%] box-border'>
         <Top_Header title="Home Page"/>
-        <section className='w-[314px] h-[396px] mt-[28px] mx-auto rounded-[10px]'>
+        <section className='w-full h-[396px] mt-[28px] box-border px-5  rounded-[10px]'>
         <MenuList title='Address' isTopBorder={true}  Icon={LocationOnIcon}/>
         <MenuList title='Account' isTopBorder={false} Icon={PersonIcon}/>
         <MenuList title='Notification' isTopBorder={false} Icon={NotificationsIcon}/>

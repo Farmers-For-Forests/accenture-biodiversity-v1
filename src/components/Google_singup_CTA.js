@@ -31,7 +31,7 @@ const Google_singup_CTA = ({btn_name}) => {
   return (
     <button
       onClick={() => googleLogin()}
-      className="font-inter w-[290px] h-[56px] bg-[#125B57] text-white font-[700] text-[16px] leading-[19.36px] text-center rounded-[40px]"
+      className="font-inter w-[100%] h-[56px] bg-[#125B57] text-white font-[700] text-[16px] leading-[19.36px] text-center rounded-[40px]"
       style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
     >
       {btn_name}

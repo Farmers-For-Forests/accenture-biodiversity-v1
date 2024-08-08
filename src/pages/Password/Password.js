@@ -8,7 +8,7 @@ const Password = () => {
   return (
     <div className="w-[100%] ">
       <Top_Header title="Password" />
-      <section className="w-[327px] max-h-[178px] mt-[28px] mx-auto flex flex-col gap-[18px]">
+      <section className="w-full box-border px-5 max-h-[178px] mt-[28px] flex flex-col gap-[18px]">
         <p className="font-[600] text-[24px] leading-[26.4px] text-[#125B57] ">
           Password
         </p>
@@ -16,7 +16,7 @@ const Password = () => {
           Manage password
         </p>
         {/*-------------- Input field to change Password ----------------- */}
-        <div className="w-[327px] max-h-[72px] relative">
+        <div className="w-full max-h-[72px] relative">
           <label
             htmlFor="Password"
             className="font-[500] text-[16px] leading-[16px] text-[#125B57]"
@@ -24,7 +24,7 @@ const Password = () => {
             Password
           </label>
           <div
-            className={`w-[322px] absolute top-[24px] ${
+            className={`w-full absolute top-[24px] ${
               focusedInput === "Password"
                 ? "border-none"
                 : "border-2 border-[#125B57]"
@@ -58,7 +58,7 @@ const Password = () => {
         </div>
 
         {/* button section for changing the Password */}
-        <section className="mt-[100px] mx-auto">
+        <section className="mt-[100px] w-full px-5">
           <CTA btn_name="Change Password" />
         </section>
       </section>
