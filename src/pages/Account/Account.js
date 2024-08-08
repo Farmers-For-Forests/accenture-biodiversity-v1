@@ -5,7 +5,7 @@ import Input_Field from './Input_Field';
 const Account = () => {
     
   return (
-    <div className='w-[480px] mx-auto'>
+    <div className='w-[100%]'>
         <Top_Header title='Account'/>
 
         <section className="w-[327px] max-h-[448px] mt-[28px] mx-auto flex flex-col gap-[18px]">

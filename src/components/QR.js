@@ -66,7 +66,7 @@ const QRComponent = () => {
   };
 
   return (
-    <>
+    <div className='w-[100%]'>
     <div className='top_header'>
     <QR_Header title="Home Page"/>
     </div>
@@ -94,7 +94,7 @@ const QRComponent = () => {
           </div>
         )}
       </div>
-    </>
+      </div>
   );
 };
 
