@@ -5,7 +5,7 @@ const MenuList = ({ title, isTopBorder,Icon }) => {
   return (
     <div>
       <div
-        className={`w-[314px] h-[57px] border-0 border-b border-b-white p-[16px] flex justify-start items-center gap-[24px] bg-[#125B57] ${
+        className={`w-full h-[57px] border-0 border-b border-b-white p-[16px] flex justify-start items-center gap-[24px] bg-[#125B57] ${
           isTopBorder ? 'rounded-t-lg' : '' 
         } `}
       >

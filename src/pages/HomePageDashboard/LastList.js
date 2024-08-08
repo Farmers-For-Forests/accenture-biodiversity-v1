@@ -6,7 +6,7 @@ const LastList = ({title,Icon}) => {
   return (
     <div>
      <div
-        className={`w-[314px] h-[57px] border-0 border-b border-b-white p-[16px] flex justify-start items-center gap-[24px] bg-[#125B57] rounded-b-lg`}
+        className={`w-full h-[57px] border-0 border-b border-b-white p-[16px] flex justify-start items-center gap-[24px] bg-[#125B57] rounded-b-lg`}
       >
         <span className='text-white'>
         {Icon && <Icon className='w-[17.5px] h-[25px]'/>}
