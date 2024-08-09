@@ -23,6 +23,7 @@ import Dashboard from './pages/HomePageDashboard/Dashboard.js';
 import CitizenScientistKit from './pages/CitizenScientistKit/CitizenScientistKit.js';
 import Discussion from './pages/CitizenScientistKit/Discussion.js';
 import Posts  from './pages/CitizenScientistKit/Posts.js';
+import MediaCapture from './pages/CitizenScientistKit/MediaCapture.js';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/kit" element={<CitizenScientistKit/>} />
         <Route path="/discussion" element={<Discussion/>} />
         <Route path="/posts" element={<Posts/>} />
+        <Route path="/camera" element={<MediaCapture/>} />
         <Route path="/central-forest" element={<CentralForestPage />} />
         <Route path="/central-forest/cf-summary" element={<CfSummary />} /> 
         <Route path="/dry-arid-region/dar-summary" element={<DarSummary />} /> 
