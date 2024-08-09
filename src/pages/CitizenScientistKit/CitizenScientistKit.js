@@ -9,7 +9,7 @@ const CitizenScientistKit = () => {
       <Top_Header title="Citizen scientist kit" />
       <section className="w-full  box-border px-5 h-[326px] flex flex-col gap-[31px] mt-[14px] ">
         <section className="w-full  flex justify-center">
-          <Navbar />
+          <Navbar isForum={false}/>
         </section>
         <section className="w-full h-[269.7px] flex flex-col gap-[18px] ">
           <UserList name="Admin 1" message="hello" />
