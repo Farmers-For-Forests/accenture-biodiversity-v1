@@ -1,21 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import { GoogleOAuthProvider } from '@react-oauth/google';
-import reportWebVitals from './reportWebVitals';
-import { clientID } from './Sensitive_Data';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import reportWebVitals from "./reportWebVitals";
+import { clientID } from "./Sensitive_Data";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <GoogleOAuthProvider clientId={clientID}>
-  <App />
-  </GoogleOAuthProvider>
-
+    <GoogleOAuthProvider clientId={clientID}>
+      <App />
+      <ToastContainer
+        position="top-right"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+       
+      />
+    </GoogleOAuthProvider>
   </React.StrictMode>
 );
 

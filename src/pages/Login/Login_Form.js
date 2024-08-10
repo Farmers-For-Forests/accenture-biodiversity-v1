@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import CTA from "../../components/Common_Components/CTA";
 import Toggle_login_signup from "../../components/Common_Components/Toggle_login_signup";
 import Google_singup_CTA from "../../components/Google_singup_CTA";
-
+import { NavLink } from "react-router-dom";
 
 const Login_Form = () => {
   const [focusedInput, setFocusedInput] = useState(null);
-
-
 
   return (
     <div className="w-full mx-auto flex flex-col gap-[18px]">
@@ -15,7 +13,9 @@ const Login_Form = () => {
         <form className="flex flex-col gap-[18px]">
           <div
             className={`w-full h-[56px] ${
-              focusedInput === "username" ? "border-none" : "border-2 border-black"
+              focusedInput === "username"
+                ? "border-none"
+                : "border-2 border-black"
             } bg-white`}
           >
             <input
@@ -25,7 +25,9 @@ const Login_Form = () => {
               onFocus={() => setFocusedInput("username")}
               onBlur={() => setFocusedInput(null)}
               className={`placeholder-custom w-full h-full font-inter font-[300] text-[18px] leading-[21.78] p-[calc(16px-2px)] pr-[calc(23px-2px)] pl-[calc(23px-2px)] ${
-                focusedInput === "username" ? "border-2 border-black" : "border-none"
+                focusedInput === "username"
+                  ? "border-2 border-black"
+                  : "border-none"
               } bg-white`}
               style={{ boxSizing: "border-box" }}
             />
@@ -33,7 +35,9 @@ const Login_Form = () => {
 
           <div
             className={`w-[full] h-[56px] ${
-              focusedInput === "password" ? "border-none" : "border-2 border-black"
+              focusedInput === "password"
+                ? "border-none"
+                : "border-2 border-black"
             } bg-white`}
           >
             <input
@@ -43,7 +47,9 @@ const Login_Form = () => {
               onFocus={() => setFocusedInput("password")}
               onBlur={() => setFocusedInput(null)}
               className={`placeholder-custom w-full h-full font-inter font-[300] text-[18px] leading-[21.78] p-[calc(16px-2px)] pr-[calc(23px-2px)] pl-[calc(23px-2px)] ${
-                focusedInput === "password" ? "border-2 border-black" : "border-none"
+                focusedInput === "password"
+                  ? "border-2 border-black"
+                  : "border-none"
               } bg-white`}
               style={{ boxSizing: "border-box" }}
             />
@@ -63,9 +69,13 @@ const Login_Form = () => {
         redirect_To=" Sign up"
         redirect_path="/signup"
       />
-
-            
-
+      <p className="w-full flex justify-center items-center">
+      <NavLink to="/resetPassword">
+        <span className="cursor-pointer font-[400] font-inter leading-[21.78px] text-[14px] text-gray-400 underline ">
+          Reset Password 
+        </span>
+      </NavLink>
+      </p>
     </div>
   );
 };

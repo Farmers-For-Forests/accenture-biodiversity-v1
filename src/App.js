@@ -24,6 +24,7 @@ import CitizenScientistKit from './pages/CitizenScientistKit/CitizenScientistKit
 import Discussion from './pages/CitizenScientistKit/Discussion.js';
 import Posts  from './pages/CitizenScientistKit/Posts.js';
 import MediaCapture from './pages/CitizenScientistKit/MediaCapture.js';
+import ResetPassword from './pages/ResetPassword/ResetPassword.js';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/resetPassword" element={<ResetPassword />} />
+
         <Route path="/qrcode" element={<QR />} />
         <Route path="/address" element={<Address />} />
         <Route path="/notificationOn" element={<Turn_Off />} />
