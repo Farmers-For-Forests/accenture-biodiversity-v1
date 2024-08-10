@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CTA from "../../components/Common_Components/CTA";
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { encrypt } from "../../HelperFunctions/calcMD5";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 const ResetPasswordForm = () => {
   const [focusedInput, setFocusedInput] = useState(null);
@@ -11,12 +12,11 @@ const ResetPasswordForm = () => {
   const [otp, setOtp] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [passwordError, setPasswordError] = useState("");
+ 
 
   const handlePasswordToggle = () => {
     setShowPassword(!showPassword);
   };
-
-  
 
   const validatePassword = (password) => {
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
@@ -30,25 +30,43 @@ const ResetPasswordForm = () => {
     return true;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-   
 
     // Validate password before submission
     if (!validatePassword(password)) {
-        toast.error("Password must be at least 8 characters, with uppercase, lowercase, number, and special character.")
-        setPasswordError("")
+      toast.error(
+        "Password must be at least 8 characters, with uppercase, lowercase, number, and special character."
+      );
+      setPasswordError("");
       return;
     }
-
-  
 
     // Log the password and OTP to the console
     console.log("New Password:", password);
     console.log("OTP:", otp);
-    const encryptedPasswords = encrypt(password,12)
-  console.log("EncryptedPass",encryptedPasswords);
-  toast.success("Password changed")
+    const hashedPasswords = encrypt(password, 12);
+    console.log("EncryptedPass", hashedPasswords);
+    try {
+      const email = localStorage.getItem("email");
+      const hash = localStorage.getItem("hash");
+      const userid = localStorage.getItem("userid");
+      console.log("LS", email, hash, userid);
+      const response = await axios.post(
+        "https://farmersforforests.org/admin/acc/setpassword",
+        {
+          email: email,
+          hash: hash,
+          userid: userid,
+          otp: otp,
+          password: hashedPasswords,
+        }
+      );
+      console.log(response);
+      toast.success("Password changed");
+    } catch (error) {
+      console.log(error);
+    }
 
     // Simulate sending data to the backend
     // For now, just log to the console
@@ -68,7 +86,9 @@ const ResetPasswordForm = () => {
               onFocus={() => setFocusedInput("password")}
               onBlur={() => setFocusedInput(null)}
               className={`w-full font-inter h-[48px] p-[12px] mt-1 placeholder-[#125B57] border-2 ${
-                focusedInput === "password" ? "border-[#125B57]" : "border-[#125B57]"
+                focusedInput === "password"
+                  ? "border-[#125B57]"
+                  : "border-[#125B57]"
               } bg-[#FAFAFA] box-border outline-none text-[#125B57] font-[300] text-[16px] leading-[19.36px] tracking-[-2%]`}
             />
             <button
@@ -78,7 +98,6 @@ const ResetPasswordForm = () => {
             >
               {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
             </button>
-           
           </div>
 
           <input
@@ -93,10 +112,8 @@ const ResetPasswordForm = () => {
               focusedInput === "OTP" ? "border-[#125B57]" : "border-[#125B57]"
             } bg-[#FAFAFA] box-border outline-none text-[#125B57] font-[300] text-[16px] leading-[19.36px] tracking-[-2%]`}
           />
- {/* {passwordError && (
-              <p className="text-red-500 text-sm mt-1">{passwordError}</p>
-            )} */}
-          <CTA btn_name="Reset Password" />
+         
+          <CTA btn_name="Set Password" />
         </form>
       </section>
     </div>
